@@ -9,6 +9,7 @@ app.use('/js', express.static(join(__dirname, 'js')));
 app.get('/', (_req, res) => res.sendFile(join(__dirname, 'views/index.html')));
 app.get('/bar', (_req, res) => res.sendFile(join(__dirname, 'views/bar.html')));
 app.get('/area', (_req, res) => res.sendFile(join(__dirname, 'views/area.html')));
+app.get('/revenue', (_req, res) => res.sendFile(join(__dirname, 'views/revenue.html')));
 
 app.get('/stream', (req, res) => {
     res.writeHead(200, {

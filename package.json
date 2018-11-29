@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -p ."
+    "prestart": "tsc -p .",
+    "start": "node src/main"
   },
   "keywords": [],
   "author": "",
